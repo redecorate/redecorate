@@ -1,5 +1,5 @@
-# Welcome to Resurgence
+# Welcome to Redecorate
 
-We bring websites back to life
+We rebuild existing websites to show how better it can be done
 
-![Resurgence Logo](/static/favicon.png)
+![Redecorate Logo](/static/favicon.png)
