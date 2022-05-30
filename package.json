@@ -1,10 +1,10 @@
 {
-  "name": "Web Refactor",
+  "name": "web-refactor",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "npm run check && npm run lint && svelte-kit build",
-    "start": "svelte-kit preview",
+    "start": "npm run build && svelte-kit preview --port=3333",
     "prettier": "prettier --ignore-path .gitignore --plugin-search-dir=. .",
     "check": "npm run prettier -- --check",
     "format": "npm run prettier -- --write",

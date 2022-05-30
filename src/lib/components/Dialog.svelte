@@ -4,8 +4,6 @@
   export let dialog = null
   export let size = 'md'
 
-  let classes = `max-h-[80%] min-h-[8rem] w-full rounded-lg border-none p-0 shadow-lg max-w-${size}`
-
   // exposse methods to open and close the dialog
   onMount(() => {
     dialog.show = () => {
@@ -47,7 +45,22 @@
   }
 </script>
 
-<dialog bind:this={dialog} class={classes}>
+<dialog
+  bind:this={dialog}
+  class="max-h-[80%] min-h-[8rem] w-full rounded-lg border-none p-0 shadow-lg"
+  class:max-w-xs={size === 'xs'}
+  class:max-w-sm={size === 'sm'}
+  class:max-w-md={size === 'md'}
+  class:max-w-lg={size === 'lg'}
+  class:max-w-xl={size === 'xl'}
+  class:max-w-2xl={size === '2xl'}
+  class:max-w-3xl={size === '3xl'}
+  class:max-w-4xl={size === '4xl'}
+  class:max-w-5xl={size === '5xl'}
+  class:max-w-6xl={size === '6xl'}
+  class:max-w-7xl={size === '7xl'}
+  class:max-w-[90%]={size === 'full'}
+>
   <!-- sticky header -->
   <div class="sticky top-0 bg-inherit p-5">
     <slot name="header" />
