@@ -1,5 +1,5 @@
-# Welcome to Redecorate
+# Welcome to Web Refactor
 
-We rebuild existing websites to show how better it can be done
+We refactor existing websites to show how better it can be done
 
-![Redecorate Logo](/static/favicon.png)
+![Web Refactor Logo](/static/favicon.png)
